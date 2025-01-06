@@ -1,0 +1,162 @@
+:root {
+  --main-content: 1130px;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+input, textarea, select, button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  background: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.header-wrap {
+  width: var(--main-content);
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+
+  padding: 25px;
+  border-radius: 15px;
+  gap: 15px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.autorised {
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.autorised p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#saved-in-system {
+  width: 28px;
+  height: 28px;
+}
+
+.google button,
+.apple button {
+  width: 340px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: rgb(56, 38, 38);
+  border: 1px solid black;
+}
+
+.apple button img {
+  width: 24px;
+}
+
+.come-in {
+  width: 340px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: #247ed8;
+  height: 65px;
+  color: #ffffff;
+}
+
+.come-in:hover {
+  background-color: #174777;
+}
+
+.google,
+.apple {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.google button:hover,
+.apple button:hover {
+  background-color:  rgb(236, 235, 235);
+}
+
+#email,
+#password {
+  width: 340px;
+  height: 50px;
+  border: 1px solid black;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#password {
+  margin-top: 20px;
+}
+
+.forget-password {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #247ed8;
+}
+
+.stay-in-actual-actions {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.continue-policy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.continue-policy a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #0A66C2;
+}

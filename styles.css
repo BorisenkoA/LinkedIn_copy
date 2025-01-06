@@ -1,0 +1,219 @@
+:root {
+  --main-content: 1130px;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+.header-wrap {
+  width: var(--main-content);
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 210px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  width: 510px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.nav-item:last-child {
+  width: 95px;
+  height: 50px;
+}
+
+.nav-item:last-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  width: 64px;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-item p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.registration {
+  width: 300px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.add-now {
+  width: 195px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  border-radius: 50px;
+  color: black;
+  opacity: 0.75;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #0A66C2;
+  border: 1px solid #0A66C2;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.add-now:hover {
+  background-color: rgb(236, 235, 235);
+}
+
+.login:hover {
+  background-color: rgb(235, 246, 255);
+}
+
+.welcome {
+  max-width: var(--main-content);
+  height: 605px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 50px;
+  overflow: hidden; /*Чи потрібна тут ця властивість?*/
+  position: relative;
+}
+
+.main-bg-image {
+  position: absolute;
+  top: 55px;
+  bottom: 0;
+  right: -125px;
+}
+
+h1 {
+  width: 570px;
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 50px;
+}
+
+.google,
+.microsoft,
+.google-post {
+  width: 440px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 25px;
+  background-color: #247ed8;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.google:hover {
+  background-color: #5fa1e2;
+}
+
+.microsoft,
+.google-post {
+  gap: 12px;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: rgb(29, 4, 4);
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.microsoft:hover,
+.google-post:hover {
+  background-color: rgb(236, 235, 235);
+}
+
+.continue-policy,
+.first-on-linkedin {
+  display: block;
+  width: 440px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  margin-top: 25px;
+}
+
+.continue-policy a {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #0A66C2;
+}
+
+.first-on-linkedin {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.first-add-to-linkedin {
+  text-decoration: none;
+  color: #0A66C2;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
