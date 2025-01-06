@@ -9,25 +9,25 @@ body {
   font-family: Roboto;
 }
 
-.header-wrap {
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+/*Блок хедер*/
+.header {
   width: var(--main-content);
   height: 80px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 210px;
 }
 
-.header-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav {
+.header__menu {
   width: 510px;
   height: 55px;
+  margin-left: 210px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -35,17 +35,17 @@ body {
   box-sizing: border-box;
 }
 
-.nav-item:last-child {
+.header__link:last-child {
   width: 95px;
   height: 50px;
 }
 
-.nav-item:last-child {
+.header__link:last-child {
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav-item {
+.header__link {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -57,23 +57,23 @@ body {
   text-decoration: none;
 }
 
-.nav-item img {
+.header__link img {
   width: 24px;
   height: 24px;
 }
 
-.nav-item p {
+.header__link p {
   margin: 0;
   font-size: 12px;
   line-height: 15px;
   font-weight: 400;
 }
 
-.nav-item:hover {
+.header__link:hover {
   color: black;
 }
 
-.registration {
+.header-buttons {
   width: 300px;
   height: 55px;
   display: flex;
@@ -81,12 +81,10 @@ body {
   gap: 8px;
 }
 
-button {
-  all: unset;
-  cursor: pointer;
-}
-
-.add-now {
+.header__subscribe-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 195px;
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -96,9 +94,10 @@ button {
   border-radius: 50px;
   color: black;
   opacity: 0.75;
+  text-decoration: none;
 }
 
-.login {
+.header__login-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -112,13 +111,14 @@ button {
   text-decoration: none;
 }
 
-.add-now:hover {
+.header__subscribe-button:hover {
   background-color: rgb(236, 235, 235);
 }
 
-.login:hover {
+.header__login-button:hover {
   background-color: rgb(235, 246, 255);
 }
+/*Блок хедер*/
 
 .welcome {
   max-width: var(--main-content);
