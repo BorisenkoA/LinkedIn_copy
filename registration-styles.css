@@ -160,3 +160,7 @@ button {
   font-weight: 500;
   color: #0A66C2;
 }
+
+.continue-policy a {
+  text-decoration: none;
+}
