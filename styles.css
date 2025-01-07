@@ -1,5 +1,10 @@
 :root {
-  --main-content: 1130px;
+  --main-content-width: 1130px;
+  --main-color: #0A66C2;
+  --main-text-color: rgba(0, 0, 0, 0.6);
+  --subscribe-button-hover: rgb(236, 235, 235);
+  --login-button-hover: rgb(235, 246, 255);
+  --google-button-hover: #5fa1e2;
 }
 
 body {
@@ -16,7 +21,7 @@ button {
 
 /*Блок хедер*/
 .header {
-  width: var(--main-content);
+  width: var(--main-content-width);
   height: 80px;
   margin: 0 auto;
   display: flex;
@@ -53,7 +58,7 @@ button {
   width: 64px;
   text-align: center;
   box-sizing: border-box;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
@@ -105,23 +110,23 @@ button {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  color: #0A66C2;
-  border: 1px solid #0A66C2;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
   border-radius: 50px;
   text-decoration: none;
 }
 
 .header__subscribe-button:hover {
-  background-color: rgb(236, 235, 235);
+  background-color: var(--subscribe-button-hover);
 }
 
 .header__login-button:hover {
-  background-color: rgb(235, 246, 255);
+  background-color: var(--login-button-hover);
 }
 /*Блок хедер*/
 
 .welcome {
-  max-width: var(--main-content);
+  max-width: var(--main-content-width);
   height: 605px;
   display: flex;
   justify-content: space-between;
@@ -143,7 +148,7 @@ h1 {
   font-size: 50px;
   line-height: 65px;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-text-color);
   margin: 0;
   margin-top: 50px;
 }
@@ -158,14 +163,18 @@ h1 {
   align-items: center;
   gap: 12px;
   margin-top: 25px;
-  background-color: #247ed8;
+  background-color: var(--main-color);
   border-radius: 50px;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+.continue-btn a {
+  text-decoration: none;
 }
 
 .google:hover {
-  background-color: #5fa1e2;
+  background-color: var(--google-button-hover);
 }
 
 .microsoft,
@@ -174,15 +183,15 @@ h1 {
   margin-top: 20px;
   background-color: #fff;
   border-radius: 50px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--main-text-color);
   color: rgb(29, 4, 4);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 21px;
 }
 
 .microsoft:hover,
 .google-post:hover {
-  background-color: rgb(236, 235, 235);
+  background-color: var(--subscribe-button-hover);
 }
 
 .continue-policy,
@@ -192,7 +201,7 @@ h1 {
   text-align: center;
   font-size: 12px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-text-color);
   margin: 0;
   margin-top: 25px;
 }
@@ -202,7 +211,7 @@ h1 {
   font-size: 13px;
   line-height: 18px;
   font-weight: 700;
-  color: #0A66C2;
+  color: var(--main-color);
 }
 
 .first-on-linkedin {
@@ -212,7 +221,7 @@ h1 {
 
 .first-add-to-linkedin {
   text-decoration: none;
-  color: #0A66C2;
+  color: var(--main-color);
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
