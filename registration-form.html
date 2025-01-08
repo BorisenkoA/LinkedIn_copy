@@ -11,16 +11,16 @@
 </head>
 <body>
   <header class="header-wrap">
-    <a class="header-logo">
+    <a href="#" class="header__logo">
       <img src="/images/header-logo.png" alt="logo_linked_in">
     </a>
   </header>
   <section class="user-card">
     <h1>Увійти</h1>
     <p class="stay-in-actual-actions">Залишайтеся в курсі подій у вашому професійному світі.</p>
-    <form action="" class="form">
-      <input type="email" id="email" placeholder="Адреса е-пошти чи телефон"><br>
-      <input type="password" id="password" placeholder="Пароль">
+    <form action="" class="form" id="myForm">
+      <input type="email" value="" id="email" placeholder="Адреса е-пошти чи телефон"><br>
+      <input type="password" value="" id="password" placeholder="Пароль">
     </form>
     <a href="#" class="forget-password">Забули пароль?</a>
     <div class="autorised">
@@ -29,8 +29,8 @@
         Залишити мене авторизованим на платформі
       </p>
     </div>
-    <a href="#" class="come-in">
-      <button type="submit">
+    <a href="" class="come-in" id="submit-button" onclick="saveDataFunction()">
+      <button type="button" >
         Увійти
       </button>
     </a>
@@ -61,5 +61,7 @@
       </button>
     </a>
   </section>
+
+  <script src="main.js"></script>
 </body>
 </html>

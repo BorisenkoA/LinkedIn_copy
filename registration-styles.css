@@ -1,5 +1,10 @@
 :root {
-  --main-content: 1130px;
+  --main-content-width: 1130px;
+  --main-color: #0A66C2;
+  --main-text-color: rgba(0, 0, 0, 0.6);
+  --subscribe-button-hover: rgb(236, 235, 235);
+  --login-button-hover: rgb(235, 246, 255);
+  --google-button-hover: #5fa1e2;
 }
 
 body {
@@ -33,7 +38,7 @@ button {
 }
 
 .header-wrap {
-  width: var(--main-content);
+  width: var(--main-content-width);
   height: 80px;
   margin: 0 auto;
   display: flex;
@@ -51,7 +56,7 @@ button {
   border-radius: 15px;
   gap: 15px;
   box-sizing: border-box;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px var(--main-text-color);
 }
 
 .autorised {
@@ -98,7 +103,7 @@ button {
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
-  background-color: #247ed8;
+  background-color: var(--main-color);
   height: 65px;
   color: #ffffff;
 }
@@ -116,7 +121,7 @@ button {
 
 .google button:hover,
 .apple button:hover {
-  background-color:  rgb(236, 235, 235);
+  background-color:  var(--subscribe-button-hover);
 }
 
 #email,
@@ -137,7 +142,7 @@ button {
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
-  color: #247ed8;
+  color: var(--main-color);
 }
 
 .stay-in-actual-actions {
@@ -149,7 +154,7 @@ button {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-text-color);
   margin: 0;
 }
 
@@ -158,5 +163,9 @@ button {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  color: #0A66C2;
+  color: var(--main-color);
+}
+
+.continue-policy a {
+  text-decoration: none;
 }

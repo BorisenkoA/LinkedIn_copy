@@ -10,62 +10,70 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header-wrap">
-    <a class="header-logo">
+  <header class="header">
+    <a href="#" class="header__logo">
       <img src="/images/header-logo.png" alt="logo_linked_in">
     </a>
-    <div class="header-nav">
-      <nav class="nav">
-        <a href="#" class="nav-item">
+      <nav class="header__menu menu">
+        <a href="#" class="header__link">
           <img src="/images/articles.svg" alt="">
           <p>Статті</p>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="header__link">
           <img src="/images/peoples.svg" alt="">
           <p>Люди</p>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="header__link">
           <img src="/images/learning.svg" alt="">
           <p>Learning</p>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="header__link">
           <img src="/images/vacancies.svg" alt="">
           <p>Вакансії</p>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="header__link">
           <img src="/images/games.svg" alt="">
           <p>Ігри</p>
         </a>
-        <a href="#" class="nav-item">
+        <a href="#" class="header__link">
           <img src="/images/download-app.svg" alt="">
           <p>Завантажити додаток</p>
         </a>
       </nav>
-      <div class="registration">
-        <button class="add-now">
-          Приєднатися зараз
-        </button>
-        <a href="registration-form.html" class="login">
-          Увійти
+      <div class="header-buttons">
+        <a href="#" class="header__subscribe-button">
+          <button>
+            Приєднатися зараз
+          </button>
+        </a>
+        <a href="registration-form.html" class="header__login-button">
+          <button>
+            Увійти
+          </button>
         </a>
       </div>
-    </div>
   </header>
   <section class="welcome">
     <div class="continue">
       <h1>Ласкаво просимо до професійної спільноти!</h1>
       <div class="continue-btn">
-        <button class="google">
-          <img src="/images/google-logo.png" alt="">
-          Continue with Google
-        </button>
-        <button class="microsoft">
-          <img src="/images/microsoft-logo.png" alt="">
-          Продовжити з Microsoft
-        </button>
-        <button class="google-post">
-          Увійти за допомогою електронної пошти
-        </button>
+        <a href="#">
+          <button class="google">
+            <img src="/images/google-logo.png" alt="">
+            Continue with Google
+          </button>
+        </a>
+        <a href="#">
+          <button class="microsoft">
+            <img src="/images/microsoft-logo.png" alt="">
+            Продовжити з Microsoft
+          </button>
+        </a>
+        <a href="/registration-form.html">
+          <button class="google-post">
+            Увійти за допомогою електронної пошти
+          </button>
+        </a>
         <p class="continue-policy">
           Натискаючи «Продовжити», щоб приєднатися або увійти, ви приймаєте
           <a class="use" href="#">
@@ -93,6 +101,6 @@
     </div>
   </section>
 
-
+  <script src="main.js"></script>
 </body>
 </html>
