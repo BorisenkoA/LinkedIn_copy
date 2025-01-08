@@ -15,6 +15,4 @@ function saveDataFunction() {
   anchor.href = URL.createObjectURL(file);
   anchor.download = "userData.txt";
   anchor.click();
-
-  URL.revokeObjectURL(anchor.href);
 };
